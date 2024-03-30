@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0; /* Changed to a light gray background */
+}
+
+.container {
+    width: 90%; /* Added a width to the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Added padding for spacing */
+}
+
+.main_section {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 85vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Changed to space-between */
+    flex-wrap: wrap; /* Allow content wrapping */
+}
+
+.left_section,
+.right_section {
+    flex: 1; /* Each section takes equal space */
+    margin: 10px; /* Added margin for spacing */
+}
+
+.left_section {
+    background-color: #ffcc00; /* Changed to a yellow background */
+    height: 100%;
+    border-radius: 15px;
+    transition: 0.2s ease-out;
+    background-image: linear-gradient(#f2ff00 30%, #edfc18 20%, #dcdcdc 50%);
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.left_section:hover {
+    transform: translateX(-10px);
+}
+
+.nav_section {
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.image img {
+    height: 130px;
+    width: 110px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: 0.2s ease-out;
+}
+
+.image img:hover {
+    transform: translateY(-2px);
+}
+
+.left_section .content .end_part {
+    width: 100%; /* Adjusted width */
+    margin-top: 50px;
+}
+
+.icon_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon_container a {
+    margin: 0 10px; /* Added margin for spacing */
+}
+
+.right_section {
+    width: 35%;
+    height: 100%;
+    border-radius: 15px;
+    margin-left: 20px; /* Added margin for spacing */
+}
+
+.end .form_button {
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+.end .form_button button {
+    padding: 10px 50px; /* Adjusted padding */
+    background-color: #4CAF50; /* Changed to a green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition */
+}
+
+.end .form_button button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.left_section .form_button button {
+    padding: 10px 20px; /* Adjusted padding */
+    background-color: #ffcc00; /* Yellow background */
+    color: black; /* Changed text color to black */
+    border: 2px solid #ffcc00; /* Yellow border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition */
+}
+
+.left_section .form_button button:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+    color: white; /* Text color becomes white on hover */
+}
+/* Styling for buttons */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Styling for input areas */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+
+.decorative-button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.decorative-button:hover {
+    background-color: #e6b800;
+    color: white;
+    transform: translateY(-2px);
+}
+
